@@ -1,9 +1,12 @@
 package com.in28minutes.webservices.restfulwebservices.entities;
 
-public class HelloWorldBean {
+public class AuthenticationBean {
     private String message;
 
-    public HelloWorldBean(String message) {
+    public AuthenticationBean() {
+    }
+
+    public AuthenticationBean(String message) {
         this.message = message;
     }
 
@@ -17,8 +20,6 @@ public class HelloWorldBean {
 
     @Override
     public String toString() {
-        return "HelloWorldBean{" +
-                "message='" + message + '\'' +
-                '}';
+        return String.format("HelloWorldBean [message=%s]", message);
     }
 }
